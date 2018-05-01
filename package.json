@@ -1,0 +1,14 @@
+{
+  "name": "data-base",
+  "version": "1.0.0",
+  "description": "a simple database system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "brendanb",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2"
+  }
+}
