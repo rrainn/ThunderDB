@@ -1,11 +1,13 @@
 {
   "name": "ThunderDB",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "ThunderDB is an open source NoSQL database solution based on Node.js. The goal of this project is to incorporate the structure of SQL with the flexibility of NoSQL DB solutions.",
   "main": "src/index.js",
   "scripts": {
     "test": "nyc mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "version": "git checkout master && npm install && npm run build && git add -A dist",
+    "postversion": "git push -u && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
