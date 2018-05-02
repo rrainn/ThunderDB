@@ -6,9 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "brendanb",
+  "author": "brendan and charlie",
   "license": "ISC",
-  "dependencies": {
-    "file-system": "^2.2.2"
-  }
 }

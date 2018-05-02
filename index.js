@@ -1,4 +1,4 @@
-var fs = require('file-system');
+var fs = require('fs');
 
 function fileDB(db) {
     this.createDB = () => {
