@@ -1,0 +1,20 @@
+{
+  "name": "ThunderDB",
+  "version": "1.0.0",
+  "description": "ThunderDB is an open source NoSQL database solution based on Node.js. The goal of this project is to incorporate the structure of SQL with the flexibility of NoSQL DB solutions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrainn/ThunderDB.git"
+  },
+  "keywords": [],
+  "author": "rrainn, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrainn/ThunderDB/issues"
+  },
+  "homepage": "https://github.com/rrainn/ThunderDB#readme"
+}
