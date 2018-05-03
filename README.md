@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ThunderDB
 
 A database query system using node's fs package. Creates and reads files as a database!
@@ -26,3 +27,8 @@ fileDB('myDB').addDoc('myCol', 'MyDocumentName');
 ```javascript
 file('myDB').findDoc('myCol', 'SearchTerm');
 ```
+=======
+# ThunderDB - IN DEVELOPMENT [![Build Status](https://travis-ci.org/rrainn/ThunderDB.svg?branch=master)](https://travis-ci.org/rrainn/ThunderDB) [![Coverage Status](https://coveralls.io/repos/github/rrainn/ThunderDB/badge.svg?branch=master)](https://coveralls.io/github/rrainn/ThunderDB?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/rrainn/thunderdb/badge.svg)](https://snyk.io/test/github/rrainn/thunderdb) [![Dependencies](https://david-dm.org/rrainn/thunderdb.svg)](https://david-dm.org/rrainn/thunderdb) [![Dev Dependencies](https://david-dm.org/rrainn/thunderdb/dev-status.svg)](https://david-dm.org/rrainn/thunderdb?type=dev) [![NPM version](https://badge.fury.io/js/thunderdb.svg)](http://badge.fury.io/js/thunderdb) 
+
+ThunderDB is an open source NoSQL database solution based on Node.js. The goal of this project is to incorporate the structure of SQL with the flexibility of NoSQL DB solutions.
+>>>>>>> 38db1b4b417a34d02cbc6552e97647239f479481
