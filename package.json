@@ -1,15 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "data-base",
-  "version": "1.0.0",
-  "description": "a simple database system",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "brendan and charlie",
-  "license": "ISC",
-=======
   "name": "thunderdb",
   "version": "0.0.2-beta",
   "description": "ThunderDB is an open source NoSQL database solution based on Node.js. The goal of this project is to incorporate the structure of SQL with the flexibility of NoSQL DB solutions.",
@@ -37,5 +26,8 @@
     "mocha": "5.1.1",
     "nyc": "^11.7.1"
   }
+<<<<<<< HEAD
 >>>>>>> 38db1b4b417a34d02cbc6552e97647239f479481
+=======
+>>>>>>> d1c8b1344c17944d3db9f9b126c3eb00dc53a714
 }
