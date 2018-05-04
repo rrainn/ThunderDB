@@ -66,18 +66,18 @@ function fileDB(db) {
 // TODO:
 // Move to Test folder
 
-fileDB('robots').createDB();
-fileDB('robots').mkCol('robo');
-fileDB('robots').mkCol('cats');
-fileDB('robots').addDoc('cats', 'Cats 1');
-fileDB('robots').addDoc('cats', 'Cats 2');
-fileDB('robots').addDoc('cats', 'Cats 3');
-fileDB('robots').addDoc('robo', 'Robo 1');
-fileDB('robots').addDoc('robo', 'Robo 2');
-fileDB('robots').addDoc('robo', 'Robo 3');
+// fileDB('robots').createDB();
+// fileDB('robots').mkCol('robo');
+// fileDB('robots').mkCol('cats');
+// fileDB('robots').addDoc('cats', 'Cats 1');
+// fileDB('robots').addDoc('cats', 'Cats 2');
+// fileDB('robots').addDoc('cats', 'Cats 3');
+// fileDB('robots').addDoc('robo', 'Robo 1');
+// fileDB('robots').addDoc('robo', 'Robo 2');
+// fileDB('robots').addDoc('robo', 'Robo 3');
 
-setImmediate(() => {
-    console.log(fileDB('robots').getCol('cats'));
-    console.log(fileDB('robots').getCol('robo'));
-});
+// setImmediate(() => {
+//     console.log(fileDB('robots').getCol('cats'));
+//     console.log(fileDB('robots').getCol('robo'));
+// });
 
