@@ -61,6 +61,11 @@ function fileDB(db) {
 
 // fileDB().setPath('../ThunderTest');
 
+// Test Scripts
+
+// TODO:
+// Move to Test folder
+
 fileDB('robots').createDB();
 fileDB('robots').mkCol('robo');
 fileDB('robots').mkCol('cats');
