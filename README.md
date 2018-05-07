@@ -32,29 +32,48 @@ ThunderDB is an open source NoSQL database solution based on Node.js. The goal o
 
 ---
 
+var db = new thunderDB('.', 'MyCoolDb');
+
+db.createDB();
+
+db.mkCol('robots');
+db.getCol('robots');
+db.addDoc('robots', 'beep-boop');
+
 ### Internal Documentation
 
-**Create a Database**
+**Initalize an instance of ThunderDB**
+
 ```javascript
-fileDB('myDB').createDB();
+const db = new thunderDB('../path/to/storage/location', 'My-DataBase-Name');
+```
+
+**Create a Database**
+Creates a database folder at a given location, will be accessed by thunderDB with all other commands.
+```javascript
+db.createDB();
 ```
 
 **Create a Collection**
+Creates a collection within the database folder.
 ```javascript
-fileDB('myDB').mkCol('myCol');
+db.mkCol('myCol');
 ```
 
 **Veiw a Collection**
+Console logs a collection. TODO: Return collection as a data object
 ```javascript
-fileDB('myDb').getCol('myCol');
+db.getCol('myCol');
 ```
 
 **Add a document to collection**
+Appends to the collection. TODO: Instead of append, retrieve JSON, convert to js object, update with new data, then rewrite the document with new data.
 ```javascript
-fileDB('myDB').addDoc('myCol', 'MyDocumentName');
+db.addDoc('myCol', 'MyDocumentName');
 ```
 
-**Add a file prefix** *Currently not implemented*
+**Add a file prefix**
+Allows you to edit the path for your database. Make sure you run a createDB if you do not have an instance of thunderSB there.
 ```javascript
-fileDB('myDB').setPath('../myOtherFolder/Data');
+db.editPath('../my/other/folder');
 ```
