@@ -45,7 +45,7 @@ db.addDoc('robots', 'beep-boop');
 **Initalize an instance of ThunderDB**
 
 ```javascript
-const db = new thunderDB('../path/to/storage/location', 'My-DataBase-Name');
+const db = new thunderDB('My-DataBase-Name', '../path/to/storage/location');
 ```
 
 **Create a Database**

@@ -9,7 +9,7 @@
 var fs = require('fs');
 
 class thunderDB {
-    constructor(filePath, dbName) {
+    constructor(dbName, filePath) {
         // Set Default FilePath
         if (filePath)    this.fp = filePath;
         else /*default*/ this.fp = '.';
@@ -42,6 +42,7 @@ class thunderDB {
 
         // Creates file named {name} in Folder named {db}
         this.mkCol = (name) => {
+            // mkCol requires a name
             if (!name) console.error(`Warning: mkDoc requires a directory name.\n - [Example: fileDB(mydb).mkCol(myCollection)]`);
             else {
                 var filePath = this.fp + '/' + this.db +'/' + name + '.json';
@@ -70,22 +71,26 @@ class thunderDB {
                 else console.log(`Saved information to [${filePath}]`);
             });
         }
+
+        this.test = (x) => {
+            return (x);
+        }
     }
 }
 
-
+module.exports = thunderDB;
 
 // Test Scripts
 
 // TODO:
 // Move to Test folder
 
-var db = new thunderDB('.', 'MyCoolDb');
+// var db = new thunderDB('MyCoolDb', '.');
 
-db.createDB();
+// db.createDB();
 
-db.mkCol('robots');
-db.getCol('robots');
-db.addDoc('robots', 'beep-boop');
+// db.mkCol('robots');
+// db.getCol('robots');
+// db.addDoc('robots', 'beep-boop');
 
 
