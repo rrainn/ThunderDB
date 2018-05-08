@@ -32,14 +32,6 @@ ThunderDB is an open source NoSQL database solution based on Node.js. The goal o
 
 ---
 
-var db = new thunderDB('.', 'MyCoolDb');
-
-db.createDB();
-
-db.mkCol('robots');
-db.getCol('robots');
-db.addDoc('robots', 'beep-boop');
-
 ### Internal Documentation
 
 **Initalize an instance of ThunderDB**
@@ -49,30 +41,35 @@ const db = new thunderDB('My-DataBase-Name', '../path/to/storage/location');
 ```
 
 **Create a Database**
+
 Creates a database folder at a given location, will be accessed by thunderDB with all other commands.
 ```javascript
 db.createDB();
 ```
 
 **Create a Collection**
+
 Creates a collection within the database folder.
 ```javascript
 db.mkCol('myCol');
 ```
 
 **Veiw a Collection**
+
 Console logs a collection. TODO: Return collection as a data object
 ```javascript
 db.getCol('myCol');
 ```
 
 **Add a document to collection**
+
 Appends to the collection. TODO: Instead of append, retrieve JSON, convert to js object, update with new data, then rewrite the document with new data.
 ```javascript
 db.addDoc('myCol', 'MyDocumentName');
 ```
 
 **Add a file prefix**
+
 Allows you to edit the path for your database. Make sure you run a createDB if you do not have an instance of thunderSB there.
 ```javascript
 db.editPath('../my/other/folder');
